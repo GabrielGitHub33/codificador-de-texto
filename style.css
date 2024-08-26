@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-primária: #000000; 
+    --cor-secundaria: #0a3871; 
+    --cor-tercearia: #d8dfe8;
+    --cor-quaternaria: #495057;
+}
+
+body {
+    background-color: var(--cor-primária);  
+}
+
+textarea{
+    font-family: "Inter", system-ui;
+}
+
+header {
+    background-color: var(--cor-primária);
+}
+.header {
+    background-color: var(--cor-primária);
+    width: 90%;
+    margin: auto;
+}
+
+.logo__a {
+   margin-top: 40px;
+
+}
+
+.main {
+    width: 85.5%;
+    margin: auto 40px auto auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    min-height: calc(100vh - 91px - 72px);
+    align-items: end;
+}
+
+.apresentacao__esquerda {
+    background-color: var(--cor-primária);
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.caixa__secreta {
+    width: 80%;
+    font-size: 32px;
+    color: var(--cor-secundaria);
+    resize: none;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.caixa__secreta::placeholder {
+    color: var(--cor-secundaria);
+}
+
+
+.apresentacao__esquerda__mensagem{
+    color: var(--cor-quaternaria);
+}
+
+.grupo__botoes {
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+}
+
+.botao__criptografar {
+    background-color: var(--cor-secundaria);
+    color: #ffffff;
+    font-family: "Inter", system-ui;
+    font-size: 24px;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px; 
+    cursor: pointer;
+    max-width: 328px;
+    min-width: 160px;
+    border: 2px solid #000000; 
+}
+
+.botao__criptografar:hover{
+    background-color: #052051;
+}
+
+.botao__descriptografar {
+    background-color: #F5F7F8;
+    color: var(--cor-secundaria);
+    font-family: "Inter", system-ui;
+    font-size: 24px;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    cursor: pointer;
+    max-width: 328px;
+    min-width: 160px;
+    border: 2px solid #000000;
+}
+
+.botao__descriptografar:hover{
+    background-color: #ADB5BD;
+    color: #343A40;
+}
+
+.apresentacao__direita {
+    height: calc(100% + 48px); 
+    border-radius: 32px;
+    box-sizing: border-box;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:32px;
+    align-items: center;
+    max-width: 328px;
+    min-width: 160px;
+    border: 2px solid #343A40;
+}
+
+.apresentacao__direita.ajustar{
+    justify-content: space-between; 
+    border: 2px solid #343A40;
+}
+
+.apresentação__direita__mensagem{
+    max-width: 328px;
+    min-width: 160px;
+}
+
+.alexandre {
+    width: 100%;
+}
+
+.mensagem__final{
+    font-size: 24px;
+    font-family: "Inter", system-ui;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    background: none;
+    color: #FF8A08;
+}
+
+.mensagem__final.ajustar{
+    overflow: auto;
+    text-align: left;
+    text-wrap: normal;
+    max-width: 300px;
+    max-height: 600px;
+    border: none;
+    font-family: "Inter", system-ui;
+    color: #ADB5BD;
+}
+
+.mensagem__correta{
+    font-size: 16px;
+    font-family: "Inter", system-ui;
+    text-align: center;
+    color: #DAC0A3;
+    padding: 21.5px 0;
+}
+
+.botao__copiar {
+    background-color: #343A40;
+    color: #ffffff;
+    font-family: "Inter", system-ui;
+    font-size: 24px;
+    width: 100%;
+    height: 67px;
+    border-radius: 24px;
+    cursor: pointer;
+    max-width: 328px;
+    min-width: 160px;
+    display: none;
+    border: 2px solid #343A40;
+}
+
+.botao__copiar:hover{
+    background-color: #151515;
+    color: #d8dfe8;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+  
+.footer-image {
+    margin: 0 10px;
+}
+  
+.footer-text {
+    margin-top: 10px;
+    text-align: center;
+    color:#CED4DA;
+    font-family: "Inter", system-ui;
+    font-size: 10px;
+    justify-content: center;
+    padding: 24px;
+    text-align: center;
+    font-weight: 100;
+    margin: 0; 
+    line-height: 1;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador de texto Gabriel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+        <img class="logo__a" src="./assets/alura.png" alt="logo alura">
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="apresentacao__esquerda">
+                <textarea id="caixaSecreta" class="caixa__secreta" placeholder="Digite seu texto"></textarea>
+                <script>
+                    const textarea = document.getElementById('caixaSecreta');
+                    textarea.addEventListener('input', function () {
+                        const regex = /[^a-z\s]/g;
+                        const currentValue = textarea.value;
+                        if (regex.test(currentValue)) {
+                            alert('Apenas letras minúsculas, sem acento e caracteres especiais');
+                            textarea.value = currentValue.replace(regex, '');
+                        }
+                    });
+                </script>
+                <div class="apresentacao__esquerda__rodape">
+                    <img src="./assets/exclamacao.png" alt="exclamacao">
+                    <span class="apresentacao__esquerda__mensagem">Apenas letras minúsculas e sem acento</span>
+                    <div class="grupo__botoes">
+                        <button id="botaoCriptografar" class="botao__criptografar"> Criptografar </button>
+                        <button id="botaoDescriptografar" class="botao__descriptografar"> Descriptografar </button>
+                    </div>
+                </div>
+            </div>
+            <div id="apresentacaoDireitaAjustar" class="apresentacao__direita ajustar">
+                <img id="alexandre" class="alexandre" src="./assets/alexandre.jpg" alt="alexandre"> 
+                <div class="apresentacao__direita__mensagem">  
+                    <p id="mensagemFinal" class="mensagem__final">Nenhuma mensagem encontrada</p>
+                    <p id="mensagemCorreta" class="mensagem__correta">Digite um texto que você deseja criptografar ou descriptografar</p>
+                </div> 
+                <button id="botaoCopiar" class="botao__copiar">Copiar</button>
+            </div>    
+        </div>
+    </main>
+        <footer class="footer">
+            <a class="footer-image" href="https://instagram.com/andrewsgabriell">
+            <img src="./assets/logo instagram.png" height="30" width="30">
+            </a>
+            <a class="footer-image" href="https://linkedin.com/in/andrewsgabriell">
+            <img src="./assets/logolinkedin.png" height="30" width="30">
+            </a>
+            <a class="footer-image" href="https://github.com/gabrielGitHub33">
+            <img src="./assets/logogithub.png" height="30" width="30">
+            </a>
+            <p class="footer-text">Desenvolvido por Gabriel Almeida 08-2024</p>
+            <script src="./javascript/script.js"></script>
+        </footer>
+</body>
+</html>
